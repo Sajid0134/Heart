@@ -4,7 +4,7 @@ from flask import Flask, request, render_template
 import pickle
 
 app = Flask(__name__)
-app.config["DEBUG"]=True
+
 model = pickle.load(open('Heart_Disease_Prediction_Model.pkl', 'rb'))
 
 @app.route('/')
@@ -43,4 +43,4 @@ def predict():
     return render_template('home.html', prediction_text='Patient has {}'.format(res_val))
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
