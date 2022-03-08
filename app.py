@@ -40,7 +40,7 @@ def predict():
         res_val = "No Heart Disease "
         
 
-    return render_template('home.html',data=output, prediction_text='Patient has {}'.format(res_val))
+    return render_template('home.html', prediction_text='Patient has {}'.format(res_val))
 
 if __name__ == "__main__":
     app.run(debug=True)
