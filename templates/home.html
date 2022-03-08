@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Heart_Disease_Prediction</title>
+      
+    <style>
+          /* CSS code for button */
+        body {
+        background-image: url('static/images/project.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        }
+      
+          /* CSS code for button */
+        .button_css {
+        color: #c22424 !important;
+        text-transform: uppercase;
+        text-decoration: none;
+        background: #ffffff;
+        padding: 20px;
+        border: 4px solid hsl(0, 79%, 54%) !important;
+        display: inline-block;
+        transition: all 0.4s ease 0s;
+        }
+          
+        .button_css:hover {
+        color: #ffffff !important;
+        background: #eb2c2c;
+        border-color: #db2932 !important;
+        transition: all 0.4s ease 0s;
+        }
+
+        h1{
+            color:rgb(253, 49, 42) !important; 
+            text-align: center;
+            font-style: oblique;
+            font-size: 300%;
+            font-weight: 1000;
+        }
+
+        b{color: #da2140 !important;
+
+        }
+    </style>
+      
+</head> 
+
+    <body bgcolor="#d4a3ae">
+    
+                 
+
+            
+        <center>
+        <h1><u> Heart Disease Prediction </u></h1><br>
+        
+        <form method="POST",action="{{url_for('predict')}}">
+
+            <b>First Attribute : <input type="text" name="age" placeholder="age" required="required" /><br><br>
+            Second Attribute : <input type="text" name="resting_blood_pressure" placeholder="resting_blood_pressure" required="required" /><br><br> 
+            Third Attribute : <input type="text" name="cholesterol" placeholder="cholesterol" required="required" /><br><br>
+            Fourth Attribute : <input type="text" name="max_heart_rate" placeholder="max_heart_rate" required="required" /><br><br>
+            Fiveth Attribute : <input type="text" name="st_depression" placeholder="st_depression" required="required" /><br><br>
+            Sixth Attribute : <input type="text" name="no_of_major_vessels" placeholder="no_of_major_vessels" required="required" /><br><br>
+            Seventh Attribute : <input type="text" name="sex_male" placeholder="sex_male" required="required" /><br><br>
+            Eighth Attribute : <input type="text" name="chest_pain_type_asymptomatic" placeholder="chest_pain_type_asymptomatic" required="required" /><br><br>
+            Nineth Attribute : <input type="text" name="chest_pain_type_atypical angina" placeholder="chest_pain_type_atypical angina" required="required" /><br><br>
+            Tenth Attribute : <input type="text" name="chest_pain_type_typical angina" placeholder="chest_pain_type_typical angina" required="required" /><br><br>
+            Eleventh Attribute : <input type="text" name="thal_fixed defect" placeholder="thal_fixed defect" required="required" /><br><br>
+            Twelveth Attribute : <input type="text" name="thal_normal" placeholder="thal_normal" required="required" /><br><br>
+            Thirteenth Attribute : <input type="text" name="thal_reversable_defect" placeholder="thal_reversable_defect" required="required" /><br><br>
+            
+            </b>
+             <!-- Show button -->
+        
+            <button type="submit" , class="button_css " style="color: #cc350f;"><strong>Submit</strong></button> 
+            
+        
+        
+        
+        </form>
+        </center>
+
+        
+    </body>
+
+</html>
