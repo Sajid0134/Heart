@@ -8,7 +8,7 @@ app.config["DEBUG"]=True
 model = pickle.load(open('Heart_Disease_Prediction_Model.pkl', 'rb'))
 
 @app.route('/')
-def home():
+def main():
     return render_template('home.html')
 
 @app.route('/predict', methods=['POST'])
