@@ -47,34 +47,41 @@
       
 </head> 
 
-    <body bgcolor="#d4a3ae">
+<body bgcolor="#d4a3ae">
+<div class="login">
+    
+    <center>
+        <br>
+        
     
                  
 
             
-        <center>
-        <h1><u> Heart Disease Prediction </u></h1><br>
         
-        <form method="POST",action="{{url_for('predict')}}">
-
-            <b>First Attribute : <input type="text" name="age" placeholder="age" required="required" /><br><br>
-            Second Attribute : <input type="text" name="resting_blood_pressure" placeholder="resting_blood_pressure" required="required" /><br><br> 
-            Third Attribute : <input type="text" name="cholesterol" placeholder="cholesterol" required="required" /><br><br>
-            Fourth Attribute : <input type="text" name="max_heart_rate" placeholder="max_heart_rate" required="required" /><br><br>
-            Fiveth Attribute : <input type="text" name="st_depression" placeholder="st_depression" required="required" /><br><br>
-            Sixth Attribute : <input type="text" name="no_of_major_vessels" placeholder="no_of_major_vessels" required="required" /><br><br>
-            Seventh Attribute : <input type="text" name="sex_male" placeholder="sex_male" required="required" /><br><br>
-            Eighth Attribute : <input type="text" name="chest_pain_type_asymptomatic" placeholder="chest_pain_type_asymptomatic" required="required" /><br><br>
-            Nineth Attribute : <input type="text" name="chest_pain_type_atypical angina" placeholder="chest_pain_type_atypical angina" required="required" /><br><br>
-            Tenth Attribute : <input type="text" name="chest_pain_type_typical angina" placeholder="chest_pain_type_typical angina" required="required" /><br><br>
-            Eleventh Attribute : <input type="text" name="thal_fixed defect" placeholder="thal_fixed defect" required="required" /><br><br>
-            Twelveth Attribute : <input type="text" name="thal_normal" placeholder="thal_normal" required="required" /><br><br>
-            Thirteenth Attribute : <input type="text" name="thal_reversable_defect" placeholder="thal_reversable_defect" required="required" /><br><br>
+       
+        
+    <form action="{{url_for('predict')}}" method="post">
+         
+         <h1><u> Heart Disease Prediction </u></h1><br>
+         <b>First Attribute : <input type="text" name="age" placeholder="age" required="required" /><br><br>
+          Second Attribute : <input type="text" name="resting_blood_pressure" placeholder="resting_blood_pressure" required="required" /><br><br> 
+          Third Attribute : <input type="text" name="cholesterol" placeholder="cholesterol" required="required" /><br><br>
+          Fourth Attribute : <input type="text" name="max_heart_rate" placeholder="max_heart_rate" required="required" /><br><br>
+          Fiveth Attribute : <input type="text" name="st_depression" placeholder="st_depression" required="required" /><br><br>
+          Sixth Attribute : <input type="text" name="no_of_major_vessels" placeholder="no_of_major_vessels" required="required" /><br><br>
+          Seventh Attribute : <input type="text" name="sex_male" placeholder="sex_male" required="required" /><br><br>
+          Eighth Attribute : <input type="text" name="chest_pain_type_asymptomatic" placeholder="chest_pain_type_asymptomatic" required="required" /><br><br>
+          Nineth Attribute : <input type="text" name="chest_pain_type_atypical angina" placeholder="chest_pain_type_atypical angina" required="required" /><br><br>
+          Tenth Attribute : <input type="text" name="chest_pain_type_typical angina" placeholder="chest_pain_type_typical angina" required="required" /><br><br>
+          Eleventh Attribute : <input type="text" name="thal_fixed defect" placeholder="thal_fixed defect" required="required" /><br><br>
+          Twelveth Attribute : <input type="text" name="thal_normal" placeholder="thal_normal" required="required" /><br><br>
+          Thirteenth Attribute : <input type="text" name="thal_reversable_defect" placeholder="thal_reversable_defect" required="required" /><br><br>
             
-            </b>
-             <!-- Show button -->
-        
-            <button type="submit" , class="button_css " style="color: #cc350f;"><strong>Submit</strong></button> 
+          </b>
+          <!-- Show button -->
+          <div class="button_cont" align="center"><a class="button_css" href="#"_blank" rel="nofollow noopener">
+              <button type="submit"  class="btn btn-primary btn-block btn-large " style="color: #cc350f;"><strong>Predict heart disease</strong></button></a> 
+          </div> 
             
         
         
@@ -90,6 +97,6 @@
         </div>
 
         
-    </body>
+</body>
 
 </html>
